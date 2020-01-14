@@ -25,16 +25,28 @@ body {
     white-space: pre-wrap;
   }
   
-  .time-block{
+  /*.time-block{
     text-align: center;
     border-radius: 15px;
-  }
+  }*/
   
   .row {
-    white-space: pre-wrap;
-    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 80px;
     border-top: 1px solid white;;
     border: 1px solid black;
+
+  }
+  .inputField {
+    padding: 0%;
+  }
+  .col-2 {
+    padding: 0%;
+  }
+  .col-8 {
+    padding: 0%;
   }
   
   .hour {
@@ -60,8 +72,8 @@ body {
   
   .saveBtn {
     border-left: 1px solid black;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    height: 78px;
+    width: 100%;
     background-color: #06AED5;
     color: white;
   }
@@ -82,5 +94,15 @@ body {
     justify-content: center;
     align-items: center;
     height: 78px;
-    width: 759px;
+    width: 100%;
+}
+.timeBlock{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+}
+h3 {
+  padding-top: 23px;
+  padding-left: 20px;
 }
