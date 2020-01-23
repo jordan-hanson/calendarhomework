@@ -27,7 +27,6 @@ function hoursUpdater() {
     })
 }
 
-
 $(".saveBtn").on("click", function () {
 
     var myValue = $(this).parent().attr('id').val();
