@@ -1,7 +1,3 @@
-$("#currentDay").text(moment());
-setInterval(function () {
-    $("#currentDay").text(moment());
-}, 1000);
 
 var date = moment().format("MMMM / DD / YYYY")
 
