@@ -13,7 +13,6 @@
     <title>Work Day Scheduler</title>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="script.js"></script>
 </head>
 
 <body>
@@ -23,7 +22,7 @@
         <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-        <div id="hour-9" class="row timeBlock">
+        <span id="hour-9" class="row timeBlock">
             <div class="col-1 timeSlot">
                 9 AM
             </div>
@@ -32,7 +31,7 @@
             <button type="button" class="saveBtn col-1 btn btn-outline-primary">
                 Save
             </button>
-        </div>
+        </span>
         <div id="hour-10" class="row timeBlock">
             <div class="col-1 timeSlot">
                 10 AM
@@ -103,7 +102,7 @@
                 Save
             </button>
         </div>
-        <div id="hour-5" class="row timeBlock">
+        <span id="hour-5" class="row timeBlock">
             <div class="col-1 timeSlot">
                 5 PM
             </div>
@@ -112,10 +111,11 @@
             <button type="button" class="saveBtn col-1 btn btn-outline-primary">
                 Save
             </button>
-        </div>
+        </span>
     </div>
 
 
 </body>
+<script src="script.js"></script>
 
 </html>

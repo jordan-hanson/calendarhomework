@@ -27,11 +27,9 @@ function hoursUpdater() {
     })
 }
 //This is my JQuery onclick function for my button that saves it to local storage
-$(".saveBtn").on("click", function () {
+$(".saveBtn").on("click", function (e) {
 
-    var myValue = $(this).parent().attr('id').val();
-    var myKey = $(this).siblings('textarea').val();
+    localStorage.setItem($(this).parent().attr('id'), $(this).siblings('textarea').val())
 
-    localStorage.setItem(myKey, myValue)
 })
 hoursUpdater();
