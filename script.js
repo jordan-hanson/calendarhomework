@@ -1,7 +1,7 @@
-// $("#currentDay").text(moment());
-// setInterval(function () {
-//     $("#currentDay").text(moment());
-// }, 1000);
+$("#currentDay").text(moment());
+setInterval(function () {
+    $("#currentDay").text(moment());
+}, 1000);
 
 var date = moment().format("MMMM / DD / YYYY")
 
@@ -19,11 +19,12 @@ function hoursUpdater() {
         console.log(blockValue)
         if (blockHour < currentHour) {
             $(this).children("textarea").addClass("past")
-        } else if (blockHour === currentHour) {
+        } else if (blockHour == currentHour) {
             $(this).children("textarea").addClass("present")
-        } else {
+        } else if (blockHour > currentHour) {
             $(this).children("textarea").addClass("future")
         }
+
     })
 }
 //This is my JQuery onclick function for my button that saves it to local storage
